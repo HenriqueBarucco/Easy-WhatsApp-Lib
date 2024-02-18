@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@types/socket.io-client": "^3.0.0",
+    "dotenv": "^16.4.4",
     "socket.io-client": "^4.7.4"
   }
 }

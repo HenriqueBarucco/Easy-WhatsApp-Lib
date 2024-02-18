@@ -1,4 +1,6 @@
 import { io } from 'socket.io-client';
+import * as dotenv from 'dotenv';
+dotenv.config();
 
 const EASY_WHATSAPP_API =
   process.env.EASY_WHATSAPP_API ||
