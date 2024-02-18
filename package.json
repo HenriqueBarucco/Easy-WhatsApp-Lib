@@ -12,6 +12,7 @@
     ".": {
       "import": "index.ts",
       "exports": {
+        "default": "index.ts",
         "import": "index.ts"
       }
     }
