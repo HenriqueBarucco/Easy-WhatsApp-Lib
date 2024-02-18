@@ -8,6 +8,12 @@
   "scripts": {
     "start:dev": "tsx watch lib/main.ts"
   },
+  "exports": {
+    ".": {
+      "import": "./lib/easy-whatsapp.ts",
+      "types": "./lib/types/message.ts"
+    }
+  },
   "devDependencies": {
     "@types/node": "^20.11.19",
     "nodemon": "^3.0.3",
