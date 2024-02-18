@@ -3,17 +3,18 @@
   "version": "0.0.1",
   "description": "The simplest Lib for Easy WhatsApp.",
   "author": "Henrique Barucco",
+  "license": "MIT",
   "private": false,
   "type": "module",
   "scripts": {
-    "start:dev": "tsx watch lib/main.ts"
+    "start:dev": "tsx watch lib/main.ts",
+    "tsc": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json"
   },
-  "exports": {
-    ".": {
-      "import": "./index.ts",
-      "require": "./index.ts"
-    }
-  },
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "files": [
+    "lib/"
+  ],
   "devDependencies": {
     "@types/node": "^20.11.19",
     "nodemon": "^3.0.3",
