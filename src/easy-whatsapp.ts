@@ -31,4 +31,13 @@ export default class EasyWhatsApp {
   public receiveMessage(callback: (message: Message) => void): void {
     this.receiveMessageCallback = callback;
   }
+
+  public sendMessage(phone: string, message: string) {
+    if (this.connection) {
+      this.connection.emit('message', {
+        phone,
+        message,
+      });
+    }
+  }
 }

@@ -7,4 +7,5 @@ export default class EasyWhatsApp {
     private handleReceivedMessage;
     private receiveMessageCallback;
     receiveMessage(callback: (message: Message) => void): void;
+    sendMessage(phone: string, message: string): void;
 }
