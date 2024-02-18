@@ -10,8 +10,8 @@
   },
   "exports": {
     ".": {
-      "import": "index.ts",
-      "require": "index.ts"
+      "import": "./index.ts",
+      "require": "./index.ts"
     }
   },
   "devDependencies": {
