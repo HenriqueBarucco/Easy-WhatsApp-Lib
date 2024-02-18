@@ -5,7 +5,6 @@
   "author": "Henrique Barucco",
   "license": "MIT",
   "private": false,
-  "type": "module",
   "scripts": {
     "start:dev": "tsx watch lib/main.ts",
     "tsc": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json"
