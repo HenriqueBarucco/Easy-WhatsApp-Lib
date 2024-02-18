@@ -1,0 +1,22 @@
+{
+  "name": "easy-whatsapp-lib",
+  "version": "0.0.1",
+  "description": "The simplest Lib for Easy WhatsApp.",
+  "author": "Henrique Barucco",
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "start:dev": "tsx watch lib/main.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "nodemon": "^3.0.3",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.7.1",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@types/socket.io-client": "^3.0.0",
+    "socket.io-client": "^4.7.4"
+  }
+}
