@@ -10,8 +10,7 @@
   },
   "exports": {
     ".": {
-      "import": "./lib/easy-whatsapp.ts",
-      "types": "./lib/types/message.ts"
+      "import": "index.ts"
     }
   },
   "devDependencies": {
