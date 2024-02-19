@@ -34,7 +34,6 @@ export default class EasyWhatsApp {
 
   public sendMessage(phone: string, message: string) {
     if (this.connection) {
-      console.log(`Sending message to ${phone}: ${message}`);
       this.connection.emit('message', {
         phone,
         message,
