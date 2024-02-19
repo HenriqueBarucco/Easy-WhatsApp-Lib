@@ -1,1 +1,1 @@
-export declare const getSocketInstance: (key: string) => Promise<any>;
+export declare const getSocketInstance: (token: string) => Promise<any>;

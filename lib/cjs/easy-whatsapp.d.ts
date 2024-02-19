@@ -1,7 +1,7 @@
 import { Message } from './types/message.js';
 export default class EasyWhatsApp {
     private connection;
-    constructor(key: string);
+    constructor(token: string);
     private initialize;
     private setupListeners;
     private handleReceivedMessage;

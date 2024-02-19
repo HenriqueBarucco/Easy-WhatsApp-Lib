@@ -8,12 +8,12 @@ const EASY_WHATSAPP_API =
 
 let socketInstance: any = null;
 
-const initSocket = async (key: string) => {
+const initSocket = async (token: string) => {
   const socket = io(EASY_WHATSAPP_API, {
     autoConnect: true,
     reconnection: true,
     query: {
-      key,
+      token,
     },
   });
 
@@ -24,9 +24,9 @@ const initSocket = async (key: string) => {
   return socket;
 };
 
-export const getSocketInstance = async (key: string) => {
+export const getSocketInstance = async (token: string) => {
   if (!socketInstance) {
-    socketInstance = await initSocket(key);
+    socketInstance = await initSocket(token);
   }
   return socketInstance;
 };

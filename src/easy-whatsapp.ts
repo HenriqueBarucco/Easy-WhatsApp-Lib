@@ -5,12 +5,12 @@ import { Message } from './types/message.js';
 export default class EasyWhatsApp {
   private connection: Socket | undefined;
 
-  constructor(key: string) {
-    this.initialize(key);
+  constructor(token: string) {
+    this.initialize(token);
   }
 
-  private async initialize(key: string) {
-    this.connection = await getSocketInstance(key);
+  private async initialize(token: string) {
+    this.connection = await getSocketInstance(token);
     this.setupListeners();
   }
 
