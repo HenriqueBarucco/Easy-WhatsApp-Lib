@@ -1,8 +1,6 @@
 import { io } from 'socket.io-client';
 import * as dotenv from 'dotenv';
 
-import {version} from '../package.json';
-
 dotenv.config();
 
 const EASY_WHATSAPP_API =
@@ -21,7 +19,7 @@ const initSocket = async (token: string) => {
   });
 
   socket.on('connect', () => {
-    console.log(`Easy-WhatsApp Connected Successfully! ${version}`);
+    console.log(`Easy-WhatsApp Connected Successfully! 1.1.1`);
   });
 
   return socket;
