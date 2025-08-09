@@ -19,7 +19,7 @@ const initSocket = async (token: string) => {
   });
 
   socket.on('connect', () => {
-    console.log(`Easy-WhatsApp Connected Successfully! 1.1.1`);
+    console.log(`Easy-WhatsApp Connected Successfully! 1.2.0`);
   });
 
   return socket;
