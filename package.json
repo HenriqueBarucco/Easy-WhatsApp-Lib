@@ -1,13 +1,13 @@
 {
   "name": "easy-whatsapp-lib",
-  "version": "0.0.1",
+  "version": "1.1.0",
   "description": "The simplest Lib for Easy WhatsApp.",
   "author": "Henrique Barucco",
   "license": "MIT",
   "private": false,
   "scripts": {
     "start:dev": "tsx watch lib/main.ts",
-    "tsc": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json"
+    "tsc": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json --resolveJsonModule"
   },
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
